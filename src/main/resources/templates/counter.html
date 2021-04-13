@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!-- Festlestung des XML Namespaces als Thymeleaf Template -->
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>Zähler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- Mit dem Thymeleaf Template wird mit th auf die Möglichkeiten
+    zurückgegriffen. In diesem Fall wird das Model ausgelesen, welches
+     im Controller gesetzt worden ist. Der Platzhalter counter liest hierbei
+    den Wert aus den Modell Attributen aus.-->
+    Zähler <span th:text="${counter}"></span>
+    <a href="/inc">Hochzählen</a>
+    <a href="/start">Zurücksetzen</a>
+  </body>
+</html>

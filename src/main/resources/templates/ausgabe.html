@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ausgabe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <script src="js/popper.min.js" type="text/javascript"></script>
+    <script src=".js/bootstrap.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ausgabe</h1> 
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Ausgabe</h5>
+          <p class="card-text"><span th:text="${ausgabeName}"></span></p>
+          <a href="/eingabe" class="card-link mt-3">Zur Eingabe</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

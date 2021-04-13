@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tabelle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <script src="js/popper.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ausgabe</h1>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>2<sup>x</sup></th>
+            <th>Zahl</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr th:each="zahl, iter :${zahlen}">
+            <td>2<sup th:text="${iter.index}"></sup></td>
+            <td th:text="${zahl}"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
